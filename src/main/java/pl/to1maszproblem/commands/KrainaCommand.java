@@ -1,6 +1,5 @@
 package pl.to1maszproblem.commands;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -29,7 +28,7 @@ public class KrainaCommand implements TabExecutor {
             }
             if (args.length == 1) {
                 if (args[0].equalsIgnoreCase("list")) {
-                    TextUtil.sendMessage(player, "&fAktualne warpy na serwerze:");
+                    TextUtil.sendMessage(player, "&fAktualne krainy na serwerze:");
                     Main.getInstance().getConfiguration().getLandsKeys().forEach(land -> TextUtil.sendMessage(player, "&7- &f" + land.getName()));
                 }
                 if (!player.hasPermission("land.reload")) {
