@@ -1,0 +1,6 @@
+name: MC-LandsKey
+version: '1.0'
+main: pl.to1maszproblem.Main
+api-version: '1.13'
+commands:
+  kraina:
